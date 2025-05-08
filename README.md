@@ -12,9 +12,11 @@ and if you want an explanation of the code, scroll down below.
 ## How to run
 
 1. Click code and download as zip file.
-![image](https://github.com/user-attachments/assets/9b9c6e66-7f7d-4aeb-a093-bb1e542b034b)
+![image](https://github.com/user-attachments/assets/bbae1c64-faea-443f-976d-671e86e3c519)
+
 
 2. Unzip a download file
+
 ![image](https://github.com/user-attachments/assets/02ce25e2-37ec-4fe7-823b-380dabb302b4)
 
 
