@@ -20,11 +20,12 @@ and if you want an explanation of the code, scroll down below.
 ![image](https://github.com/user-attachments/assets/02ce25e2-37ec-4fe7-823b-380dabb302b4)
 
 
-4. Open hw2_Q1-master. Double click hw2_Q1-master and opne OpenglViewer.sln
-![image](https://github.com/user-attachments/assets/7c0ca433-d940-42fd-a2a3-3893344c0344)
+3. Open hw2_Q1-master. Double click hw2_Q1-master and opne OpenglViewer.sln
+![image](https://github.com/user-attachments/assets/1bf5961d-c697-4b59-98bf-85451fbdbbcb)
 
 
-5. click "F5" on your keybord. Then you will get the result.
+
+4. click "F5" on your keybord. Then you will get the result.
 ![image](https://github.com/user-attachments/assets/559d3c38-31c0-4d00-82d8-61836b1e78ec)
 
 ## Code explanation
