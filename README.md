@@ -142,7 +142,11 @@ void rasterize_triangle(vec4 v0, vec4 v1, vec4 v2) {
 }
 }
 ```
-Make rasterize triangle algorithm using below image. mark as white.
+Make rasterize triangle algorithm using below image. 
+
+Before marking point, we do Homogeneous divide and Viewport transform here.
+
+Declare min,max of x,y and if x,y inside triangle -> mark as white.
 
 ![image](https://github.com/user-attachments/assets/ba60885d-ff80-40c8-b4a9-95b72a414655)
 
@@ -171,10 +175,30 @@ void render_scene() {
     }
 }
 ```
-render scene 
+![image](https://github.com/user-attachments/assets/566efb95-3adf-4788-94b2-909bfdca5393)
+
+render scene make transformation pipeline.
+
+Using glm function, we make spere radius 2, move on to (0,0,-7)
+
+and make view to set camera.
+
+use glm frustum function to perspective.
+
+and otho matrix do projection. 
+
+(viewport transform is in rasterize_triangle(vec4 v0, vec4 v1, vec4 v2) )
+
+All vector multiplied and make MVP matrix.
+
+and point multiplied by MVP matrix and go to rasterize triangle.
+
+![image](https://github.com/user-attachments/assets/c529f4b7-5d2f-4845-86ef-a4ca6310a49c)
+
+
 
 -------------
-### Important Idea. PhongShading funtion
+
 
 ```
 int main() {
@@ -199,38 +223,4 @@ int main() {
 }
 ```
 
-We have to implement code based on the picture below.
-
-![image](https://github.com/user-attachments/assets/2cdfa6ff-92ea-4b94-b4d4-a69b7c7b5a4b)
-
-"return ambient + diffuse + specular;" final code represent this picture.
-
-Each variable explanation is here.
-
-**1. ambient**
-
-ambient get surface.ka value.
-
-
-**2. diffuse**
-
-Diffuse is calculated using the dot product of the lightDir and normal vectors.
-
-![image](https://github.com/user-attachments/assets/6e8f5e36-fe64-4573-8a34-2919fc81b26c)
-
-
-**3. specular**
-
-Specular is calculated using the dot product of the halfDir and normal vectors.
-
-Half vector is calculated by averaging the lightDir and viewDir vectors, and then normalizing it.
-
-![image](https://github.com/user-attachments/assets/4487e1c1-0ea7-48a8-979e-1575da8fe3f9)
-
-End of three bariable explanation.
-
-Next we can see shadowRay.
-
-Because of shadow rounding errors, we set shadowRay.origin = hitPoint + normal * 1e-4f
-
-and we can check shadow clearly.
+This main function creat window (like in hw1,2)
